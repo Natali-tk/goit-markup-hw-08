@@ -1,0 +1,58 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  padding: 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  background-color: var(--primary-white-color);
+  transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-btn-color);
+    border: 1px solid var(--accent-btn-color);
+  }
+}
+.clients-icon.logo-one {
+  width: 44.27px;
+  height: 49.23px;
+  fill: currentColor;
+}
+.clients-icon.logo-two {
+  width: 40px;
+  height: 52px;
+  fill: currentColor;
+}
+.clients-icon.logo-three {
+  width: 41px;
+  height: 42.6px;
+  fill: currentColor;
+}
+.clients-icon.logo-four {
+  width: 79.66px;
+  height: 42.02px;
+  fill: currentColor;
+}
+.clients-icon.logo-five {
+  width: 59px;
+  height: 47px;
+  fill: currentColor;
+}
+.clients-icon.logo-six {
+  width: 88.48px;
+  height: 45.44px;
+  fill: currentColor;
+}
+.clients-list .item + .item {
+  margin-left: 30px;
+}
