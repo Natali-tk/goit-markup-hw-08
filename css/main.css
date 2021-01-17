@@ -207,6 +207,8 @@ header {
 .site-nav .link-current {
   position: relative;
   color: var(--accent-btn-color);
+  width: 100px;
+  margin: 0 auto;
 }
 
 .site-nav .link-current::after {
@@ -382,7 +384,8 @@ header {
   opacity: 1;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
-  z-index: 2;
+  overflow-y: scroll;
+  z-index: 999;
 }
 
 .backdrop.is-hidden {
@@ -401,8 +404,8 @@ header {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   margin: 0;
   padding: 40px;
   background-color: var(--primary-white-color);
@@ -589,6 +592,13 @@ header {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--accent-btn-color);
+}
+
+@media screen and (min-with: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .feature-list .title {

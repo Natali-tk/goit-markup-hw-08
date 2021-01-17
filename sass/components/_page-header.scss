@@ -63,6 +63,8 @@ header {
 .site-nav .link-current {
   position: relative;
   color: var(--accent-btn-color);
+  width: 100px;
+  margin: 0 auto;
 
   &::after {
     content: '';

@@ -7,8 +7,8 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
-
-  z-index: 2;
+  overflow-y: scroll;
+  z-index: 999;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -21,8 +21,8 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   margin: 0;
   padding: 40px;
   background-color: var(--primary-white-color);
@@ -155,28 +155,35 @@
   padding-left: 14px;
   margin-bottom: 30px;
   &::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 15px;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
 
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
-  margin-right: 8px;
-  transition: border-color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: border-color 250ms var(--timing-function),
+      background-color 250ms var(--timing-function);
   }
 
- .form-checkbox:checked + &::before {
-  border-color: var(--accent-btn-color);
-  background-color: var(--accent-btn-color);
-  background-image: url(../img/iconcheck.svg);
-  background-size: contain;
-  background-origin: content-box;
- }
+  .form-checkbox:checked + &::before {
+    border-color: var(--accent-btn-color);
+    background-color: var(--accent-btn-color);
+    background-image: url(../img/iconcheck.svg);
+    background-size: contain;
+    background-origin: content-box;
+  }
 }
 .agreement-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--accent-btn-color);
+}
+
+@media screen and (min-with: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
