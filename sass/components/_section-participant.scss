@@ -94,13 +94,10 @@
 @media screen and (min-width: 1200px) {
   .participant-list {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin: -15px;
   }
   .participant-list > .item {
-    width: 270px;
-    margin: 15px;
+    width: calc((100% - 8 * 15px) / 4);
   }
 }

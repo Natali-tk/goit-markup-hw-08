@@ -2,13 +2,25 @@
 .logo-footer {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
 .logo {
   color: var(--logo-color);
-  margin-right: 93px;
 }
+
 .logo-start {
   color: var(--accent-btn-color);
 }
+
+@media screen and (min-width: 1200px) {
+  .logo,
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.38;
+  }
+}
+
+//  .logo{
+//    margin-right: 93px;
+// }

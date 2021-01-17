@@ -1,13 +1,8 @@
-.clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .clients-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   padding: 0;
   border: 1px solid #afb1b8;
@@ -53,6 +48,39 @@
   height: 45.44px;
   fill: currentColor;
 }
-.clients-list .item + .item {
-  margin-left: 30px;
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .clients-list > .item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-links {
+    width: 226px;
+  }
+  .clients-list > .item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-links {
+    width: 170px;
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients-list > .item {
+    width: calc((100% - 12 * 15px) / 6);
+  }
 }
