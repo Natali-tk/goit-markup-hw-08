@@ -12,18 +12,22 @@
 <body>
   
     <!---Шапка страницы-->
-     <!-- <header>
+     <header>
      <div class="container">
-     <nav class="main-nav"> 
-   
+     <nav class="main-nav">
      <a href="./index.html" class="logo"> <span class="logo-start">Web</span>Studio</a>
-  
+     <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu"></use>
+        <use class="icon-cross" href="./img/symbol-defs.svg#icon-close-menu"></use>
+      </svg>
+     </button>
+     <div class="menu-container" id="menu-container" data-menu>
      <ul  class="site-nav list">
        <li class="item"><a href="./index.html" class="link-current">Студия</a></li> 
        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li> 
        <li class="item"><a href="#" class="link">Контакты</a></li> 
      </ul>
-    </nav>
 
      <ul class="contact-nav list">
      <li class="item">
@@ -33,13 +37,15 @@
       <a  href="tel:+380961111111" class="link"><svg class="contact-icon tel"> <use href="./img/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
      </ul>
      </div>
-     </header>
-      -->
+    </nav>
+    </div>
+    </header>
+     
    <!--Секция герой-->
   <main>
    <section class="hero">
 
-     <h1 class="hero-title"> ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА </h1>
+     <h1 class="hero-title"> ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
      <button  type="button" class="button" data-modal-open> Заказать услугу </button>
      <div class="backdrop is-hidden" data-modal>
       

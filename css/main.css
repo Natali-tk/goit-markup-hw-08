@@ -175,21 +175,12 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -197,39 +188,10 @@ header {
 .contact-nav .link,
 .site-nav .link-current {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-}
-
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-nav.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.site-nav .item + .item {
-  margin-left: 50px;
-}
-
-.contact-nav .item + .item {
-  margin-left: 50px;
 }
 
 .site-nav .link {
@@ -256,35 +218,17 @@ header {
   background-color: var(--accent-btn-color);
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -8px;
 }
 
 .contact-nav .link {
   color: var(--primary-text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
 }
 
 .contact-nav .link:hover, .contact-nav .link:focus {
   color: var(--accent-btn-color);
-}
-
-.contact-nav .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contact-icon {
@@ -301,6 +245,58 @@ header {
 .contact-icon.tel {
   width: 10px;
   height: 16px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-white-color);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.site-nav.list > .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.contact-nav.list > .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.site-nav.list {
+  margin-bottom: 60px;
 }
 
 .hero {
