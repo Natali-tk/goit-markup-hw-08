@@ -28,7 +28,6 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 .section-title {
@@ -812,6 +811,52 @@ header {
 @media screen and (max-width: 767px) {
   .participant-list > .item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+.participant-list > .item {
+  width: 450px;
+}
+
+.card-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .participant-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .participant-list > .item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .participant-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -15px;
+  }
+  .participant-list > .item {
+    width: 270px;
+    margin: 15px;
   }
 }
 
