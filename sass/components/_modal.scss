@@ -8,27 +8,24 @@
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
   overflow-y: scroll;
-  z-index: 999;
+  z-index: 2;
 }
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-  width: 450px;
-  min-height: 609px;
+  position: relative;
+  max-width: 450px;
+  max-height: 609px;
   margin: 0;
   padding: 40px;
   background-color: var(--primary-white-color);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  display: none;
 }
 .close-btn {
   display: flex;
@@ -149,9 +146,10 @@
 
 .checkbox-agreement {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   padding-left: 14px;
   margin-bottom: 30px;
   &::before {
@@ -181,9 +179,24 @@
   color: var(--accent-btn-color);
 }
 
-@media screen and (min-with: 1200px) {
+@media screen and (min-with: 768) {
+  .backdrop {
+    position: fixed;
+  }
   .modal {
-    width: 528px;
-    min-height: 581px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-function);
+    max-width: 528px;
+    max-height: 581px;
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  .checkbox-agreement {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

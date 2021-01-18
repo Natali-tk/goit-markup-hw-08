@@ -66,6 +66,10 @@
   border: none;
   border-radius: 50%;
 }
+.card-image {
+  width: 100%;
+  object-fit: cover;
+}
 
 @media screen and (max-width: 767px) {
   .participant-list > .item:not(:last-child) {
@@ -74,10 +78,6 @@
 }
 .participant-list > .item {
   width: 450px;
-}
-.card-image {
-  width: 100%;
-  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
