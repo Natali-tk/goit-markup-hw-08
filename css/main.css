@@ -1539,9 +1539,6 @@ b {
     height: auto;
     margin: 15px;
   }
-  .card-image.work {
-    height: 294px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
