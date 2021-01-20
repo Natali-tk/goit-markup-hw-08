@@ -54,9 +54,14 @@ img {
   margin: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 786px) {
+  .section-feature,
+  .section-participant,
+  .section-works,
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button {

@@ -111,6 +111,7 @@ header {
     &.is-open {
       display: block;
     }
+    z-index: 3;
   }
   .site-nav.list > .item:not(:last-child) {
     margin-bottom: 40px;
