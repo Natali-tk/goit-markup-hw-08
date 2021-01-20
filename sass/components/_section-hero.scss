@@ -1,6 +1,8 @@
 .hero {
-  width: 100%;
-  padding: 118px 60px;
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
 
   background-image: linear-gradient(
       to right,
@@ -27,10 +29,9 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero {
     max-width: 480px;
-    margin: 0 auto;
   }
 }
 

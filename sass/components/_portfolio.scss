@@ -29,8 +29,6 @@
   align-items: center;
   padding: 0;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .card-image {
@@ -45,6 +43,7 @@
   margin: -15px;
 }
 .card {
+  max-width: 100%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -62,7 +61,9 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-
+.card-image.work {
+  max-width: 100%;
+}
 .card-content {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
@@ -114,7 +115,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .button-list {
     flex-wrap: wrap;
     margin-bottom: 40px;

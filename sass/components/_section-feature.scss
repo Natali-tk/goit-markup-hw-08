@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
   width: 450px;
   height: 120px;
   border: none;
@@ -28,6 +29,7 @@
   .feature-list .title {
     text-align: center;
   }
+
   .feature-list .item:not(:last-child) {
     margin-bottom: 30px;
   }
