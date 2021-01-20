@@ -17,13 +17,14 @@
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
   max-width: 450px;
   max-height: 609px;
+  width: 100%;
   margin: 0;
   padding: 40px;
   background-color: var(--primary-white-color);
@@ -181,25 +182,28 @@
   color: var(--accent-btn-color);
 }
 
-@media screen and (min-with: 768) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .backdrop {
-    position: fixed;
+    padding: 93px 15px 94px 15px;
   }
   .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--timing-function);
-    max-width: 528px;
-    max-height: 581px;
-    width: 100%;
+    position: relative;
   }
+}
+
+@media screen and (min-width: 768) {
   .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.9);
   }
   .checkbox-agreement {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
   }
 }
