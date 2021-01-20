@@ -88,7 +88,7 @@
 }
 .overlay {
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.55;
   padding: 63px 24px;
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
@@ -123,6 +123,7 @@
 
   .flex-container.list {
     justify-content: center;
+    margin: 0;
   }
   .button-list .item:nth-child(-n + 3) {
     margin-bottom: 15px;
@@ -153,8 +154,7 @@
     height: auto;
     margin: 15px;
   }
-  .card > .card-image {
-    width: 354px;
+  .card-image.work {
     height: 294px;
   }
 }
@@ -162,9 +162,5 @@
 @media screen and (min-width: 1200px) {
   .flex-element {
     width: calc((100% - 6 * 15px) / 3);
-  }
-  .card > .card-image {
-    width: 370px;
-    height: 294px;
   }
 }
