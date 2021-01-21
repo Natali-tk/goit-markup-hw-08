@@ -27,7 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
   margin-bottom: 50px;
 }
 
@@ -120,6 +119,7 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
     justify-content: start;
+    align-items: baseline;
   }
 
   .flex-container.list {

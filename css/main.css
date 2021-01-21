@@ -1400,7 +1400,6 @@ b {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   margin-bottom: 50px;
 }
 
@@ -1513,6 +1512,9 @@ b {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .flex-container.list {
     -webkit-box-pack: center;
